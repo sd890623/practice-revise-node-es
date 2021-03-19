@@ -46,7 +46,19 @@ const wrapperMethod = async () => {
     return c;
 }
 
+const add = (a) => {
+    let sum = 0;
+    a.forEach(num => sum += num);
+    return sum;
+}
+const addWithSpreadParameter = (...a) => {
+    let sum = 0;
+    a.forEach(num => sum += num);
+    return sum;
+}
+
 export const runDoStuff = () => {
+    /**
     wrapperMethod()
     .then(result => {
         console.log(result);
@@ -54,4 +66,9 @@ export const runDoStuff = () => {
     .catch(err => {
         console.error(err);
     });
+     **/
+
+    console.log(add([1, 2, 3, 4]));
+    console.log(addWithSpreadParameter(1, 2, 3, 4));
+
 }
