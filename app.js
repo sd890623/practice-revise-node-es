@@ -3,3 +3,6 @@ import {mylog} from "./web/randomMethods/logger";
 //logger.logA('New world');
 
 
+import { runDoStuff } from './web/randomMethods/doStuff';
+runDoStuff();
+
