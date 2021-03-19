@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "babel-node app.js",
+    "start-server": "babel-node web/server.js",
     "watch": "babel-watch app.js"
   },
   "author": "DS",
